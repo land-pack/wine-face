@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block navbar %}
+<li class="active"><a href="#">Home</a></li>
+<li><a href="#">Menu</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Contact</a></li>
+
+{% endblock %}
+
+{% block content %}
+
+
+<img src="{{ url_for('static',filename='img/wine7.png') }}" alt="banner" width="300" height="420" align="left">
+<div class="inner cover">
+
+	<h1 class="cover-heading">Cover your page.</h1>
+	<p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+	<p class="lead">
+	<a href="#" class="btn btn-lg btn-success">Buy Now</a>
+	</p>
+</div>
+{% endblock %}
+
+
+{% block footer %}
+<div class="inner">
+<p>Cover template for <a href="http://getbootstrap.com">Landpack</a>, by <a href="https://twitter.com/mdo">@Frank AK</a>.</p>
+</div>
+{% endblock %}
